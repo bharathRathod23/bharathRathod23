@@ -1,7 +1,20 @@
 - 👋 Hi, I’m @bharathRathod23
 
 
-<!---
-bharathRathod23/bharathRathod23 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+steps to generate ssh key
+
+
+1) to generate new ssh key
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+2) Add SSH Key to SSH Agent
+
+   Start the SSH agent in the background (if not already running):
+   eval "$(ssh-agent -s)"
+
+   Add your SSH private key to the SSH agent
+   ssh-add ~/.ssh/id_rsa
+
+
+copy the ssh key and add it to github
+
