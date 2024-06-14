@@ -1,1 +1,13 @@
+Verify Git Remote URL
+Ensure that your Git remote URL is configured to use the SSH protocol and not HTTPS. You can check this with:
 
+git remote -v
+
+
+
+If the remote URL starts with https://github.com/..., you need to update it to use SSH:
+
+git remote set-url origin git@github.com:<username>/<repository>.git
+
+
+git remote set-url origin git@github.com:bharathRathod23/BvrH2Project.git
