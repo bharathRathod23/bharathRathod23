@@ -18,3 +18,14 @@ steps to generate ssh key
 
 copy the ssh key and add it to github
 
+
+3) Verify SSH Key Setup
+
+   ssh -T git@github.com
+
+   You may see a message asking you to confirm the authenticity of the host. Type yes to continue. If everything is set up correctly, you will see a message like:
+
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+
